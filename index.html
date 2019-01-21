@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4 week</title>
+</head>
+<script>
+	//Задание №1 
+	var days = 365;
+	var ourPlanet = "Земля";
+	var peopls = " 7 млрд.";
+	var sun = "Солнца";
+	document.write("Мы живем на планете " + ourPlanet + ", она делает один оборот вокруг " + sun +" за " + days + " дней. Население нашей планеты составляет примерно" + peopls + " человек." + "<br>");
+	//////////////////////////////////////////////////////////
+	//Задание 2
+	var a = 5;
+	var b, c;
+	b = (a * 5);
+	b = c = (b / 2);
+	document.write(a + ",", b + ",", c + "<br>");
+	//Обьяснение: сперва объявляются переменные a,b,c. переменной a присваивается значение 5. 
+	//У знака присваивания "=" самый низкий приоритет, поэтому в выражении b = (a * 5) сперва a умножается на 5 и потом присваивается полученное значение в b.
+	//В выражении b = c = (b / 2) сперва выше полученное значение b делится  на 2 и потом присваивается полученное значение в с. Затем b принимает значение c. 
+	////////////////////////////////////////////////////////
+	//Задание 3
+	var country = ["Англия", "Франция", "Германия", "США", "Украина"];
+	var population = [55000000, 67000000, 83000000, 326000000, 45000000];
+	// 1 вариант
+	document.write(country[0] + " - " + population[0] + "<br>",
+				   country[1] + " - " + population[1] + "<br>",
+				   country[2] + " - " + population[2] + "<br>",
+				   country[3] + " - " + population[3] + "<br>",
+				   country[4] + " - " + population[4] + "<br>");
+	// 2 вариант через цикл "for" 
+	for (var i = 0; i < country.length; i++) {
+		for (var j = 0; j < population.length; j++) {
+		 
+		}
+		document.write(country[i] + " - " + population[i] + "<br>");
+	}
+	
+	//////////////////////////////////////////////////////////////////
+	//Задание 4
+	var fruits = ["апельсин", "банан", "груша"];
+	document.write(fruits.length + "<br>");
+	fruits.push("яблоко");
+	fruits.push("ананас");
+	fruits.unshift("грейпфрут");
+	document.write(fruits.length + "<br>");
+	fruits.pop();
+	fruits.shift();
+	document.write(fruits.length + "<br>");
+	/////////////////////////////////////////////////////////////////
+	//Задание 5
+	//1 вариант
+	var fruits = ["яблоко", "апельсин", "груша", "гранат"];
+	fruits.splice(-2, 1, "ананас");
+	document.write(fruits +"<br>");
+	var fruits = ["банан", "мандарин", "манго"];
+	fruits.splice(-2, 1, "ананас");
+	document.write(fruits +"<br>");
+	//2 вриант 
+	var fruits = ["яблоко", "апельсин", "груша", "гранат"];
+	fruits.splice(fruits.length-2, 1, "ананас");
+	document.write(fruits + "<br>");
+	var fruits = ["банан", "мандарин", "манго"];
+	fruits.splice(fruits.length-2, 1, "ананас");
+	document.write(fruits + "<br>");
+	////////////////////////////////////////////////////////////////
+	//Задание 6
+	var students = ["Сергей", "Матвей", "Лейла", "Алина", "Иоган"];
+		if (students.length>=3) {
+			document.write("Это большой массив, в котором как минимум 3 элемента" + "<br>");
+		} else {
+			document.write("Это маленький массив, в котором менее 3-х элементов" + "<br>");
+		}
+	///////////////////////////////////////////////////////////////
+	//Задание 7
+	var students = ["Дмитрий", "Алексей", "Петр", "Виктор"];
+	if (students.length==4 && students[students.length-1]=="Виктор") {
+			document.write("Этот массив мне подходит" + "<br>");
+		} else {
+			document.write("Это массив мне не подходит" + "<br>");
+		}
+	///////////////////////////////////////////////////////////////
+	//Задание 8
+	var a=1;
+	var b=8;
+	var result;
+	(a + b < 4) ? result = 'Мало': result = 'Много';
+	document.write(result);
+	///////////////////////////////////////////////////////////////	
+	// Задание 9
+	var message;
+	var login;
+	(login == "Вася") ? message = "Привет":
+	(login == "Директор") ? message = "Здравствуйте":
+	(login == "") ? message = "Нет логина":
+	message = "";
+	///////////////////////////////////////////////////////////////
+	//Задание 10
+	var message;
+	var nameJS = prompt("Каково «официальное» название JavaScript?", "ECMAScript");
+	(nameJS == "ECMAScript") ? message = "Верно!": message = "Не знаете? «ECMAScript»!";
+	alert(message);
+	//////////////////////////////////////////////////////////////
+</script>
+<body>
+	
+</body>
+</html>
